@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UCS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<script src="https://use.fontawesome.com/16e50f8d35.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header">
+			<div class="content">
+				<span class="room">UniversalChatSystem</span>
+			</div>
+		</div>
+	</header>
+	<div class="messages" id="messages">
+	</div>
+	<div class="footer">
+		<div class="content">
+			<form autocomplete="off" onsubmit="sendMessage(this); return false;">
+				<input type="text" name="message" id="message" placeholder="Message" onkeyup="inputChange(this)" autofocus disabled><button type="submit" id="send" class="send right" disabled>Send</button>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="./assets/js/host.js"></script>
+	<script type="text/javascript" src="./assets/js/loader.js"></script>
+	<script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+</html>

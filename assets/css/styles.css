@@ -1,0 +1,157 @@
+html,
+body {
+  background-color: #f7f7f7;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: black;
+  line-height: 1.6;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  float: right;
+}
+
+div.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 54px;
+  width: 100%;
+  background-color: #eee;
+}
+
+div.header > div.content {
+  margin-top: 17px;
+  text-align: center;
+}
+
+div.header > div.content > span {
+  font-weight: bold;
+}
+
+.left {
+  float: left;
+  margin-left: 12px;
+}
+
+.right {
+  float: right;
+  margin-right: 12px;
+}
+
+div.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #eee;
+}
+
+div.footer > div.content {
+  margin-top: 13.333px;
+  text-align: center;
+}
+
+#message {
+  font-weight: bold;
+  width: 80%;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3.5px;
+  position: relative;
+  bottom: 8px;
+  padding-left: 5px;
+}
+
+button.send {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3.5px;
+  color: #999;
+  height: 22px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  bottom: 4px;
+}
+
+@media screen and (max-width:520px) {
+  /*div.messages { minwidth 680px
+    margin: auto;
+    width: 50%;
+  }*/
+  button.send {
+    display: none;
+  }
+}
+
+div.messages {
+  padding: 10px 20px;
+  height: calc(100vh - 114px);
+  max-height: calc(100vh - 114px);
+  overflow-y: auto;
+  margin-top: 54px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: default;
+}
+
+h1,
+h2 {
+  font-weight: 100;
+}
+
+message {
+  margin-top: 10px;
+  padding: 10px 20px;
+  display: inline-block;
+  max-width: 70%;
+  clear: both;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+message text {
+  text-align: left;
+  font-size: 16px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+}
+
+message[was=received] {
+  border-radius: 2px 20px 20px 20px;
+  float: left;
+  background-color: white;
+  color: black;
+}
+
+message[was=sent] {
+  border-radius: 20px 2px 20px 20px;
+  float: right;
+  background-color: #66b266;
+  color: white;
+}
+
+sender, timestamp {
+  font-size: 12px;
+  color: #000;
+}
+
+sender:after {
+  content: " |";
+}
+
+timestamp:before {
+  content: " ";
+}
