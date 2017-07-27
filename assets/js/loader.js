@@ -117,7 +117,7 @@ if(sessionStorage.getItem("username") != null){
 
 var socket,
     address = window.host+":"+window.port,
-    socket = new WebSocket("wss://"+address);
+    socket = new WebSocket("ws://"+address);
 //####################################################\\
 socket.onopen = function(){
     if(usernamehasnotbeensent)connection.user.send(window.username);
