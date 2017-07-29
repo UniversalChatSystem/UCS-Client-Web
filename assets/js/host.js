@@ -1,2 +1,2 @@
-window.host = "server.u-c-s.gq"; // server address
-window.port = 3002; // server port
+window.host = "138.197.114.14"; // server address
+window.port = 8080; // server port
